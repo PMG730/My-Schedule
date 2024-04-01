@@ -1,0 +1,82 @@
+:root{
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+body{
+    background-color:grey;
+}
+.Schedule-boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'top-box top-box top-box top-box top-box'
+      'A1-box B1-box A2-box B2-box A3-box'
+      'C1-box C1-box C1-box C1-box C1-box'
+      'D1-box D1-box D1-box D1-box D1-box'
+      'E1-box E1-box E1-box E1-box E1-box'
+      'Footer Footer Footer Footer Footer' ;
+  }
+  
+  
+  .top-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    
+  }
+  .A1-box,.A2-box,.A3-box{
+    padding-left:100px;
+  }
+  .top-box,.Footer,.A1-box,.A2-box,.A3-box,.B1-box,.B2-box,.E1-box{
+    padding:3rem;
+    background-color:white;
+    box-shadow: var(--shadow);
+  }
+  h2{
+    text-align:center
+  }
+  .top-box {
+    grid-area: top-box;
+  }
+  
+  .A1-box {
+    grid-area: A1-box;
+  }
+  
+  .B1-box {
+    grid-area: B1-box;
+  }
+  
+  .A2-box {
+    grid-area: A2-box;
+  }
+  
+  .B2-box {
+    grid-area: B2-box;
+  }
+  
+  .A3-box {
+    grid-area: A3-box;
+  }
+  .C1-box{
+    grid-area: C1-box;
+  }
+  .D1-box{
+    grid-area: D1-box;
+  }
+  .E1-box{
+    grid-area: E1-box;
+
+  }
+  .Footer{
+    grid-area: Footer;
+  }
+  img {
+    display: block;
+    margin: auto; 
+  }
+  Footer{
+    padding: 0px;
+  }
+  
